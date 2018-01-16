@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Maven is a Java tool, so you must have [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html installed in order to proceed.
+Maven is a Java tool, so you must have [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed in order to proceed.
 
 Then, [download Maven](https://maven.apache.org/download.cgi) and follow the installation instructions. After that, type the following in a terminal or in a command prompt:
 
