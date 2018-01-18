@@ -86,7 +86,7 @@ A `docker-maven-plugin` has also been configured to create a docker image automa
 mvn clean package docker:build 
 ```
 
-If you have a [DockerHub](https://hub.docker.com) account, the docker image can be automatically uploaded by running the following instruction:
+If you have a [DockerHub](https://hub.docker.com) account, the docker image can be automatically uploaded by running:
 ```sh
 mvn docker:push
 ```
