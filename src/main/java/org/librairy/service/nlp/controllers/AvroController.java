@@ -1,7 +1,7 @@
 package org.librairy.service.nlp.controllers;
 
-import org.librairy.service.nlp.MyService;
 import org.librairy.service.nlp.facade.AvroServer;
+import org.librairy.service.nlp.facade.model.NlpService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +18,12 @@ public class AvroController {
     private static final Logger LOG = LoggerFactory.getLogger(AvroController.class);
 
     @Autowired
-    MyService service;
+    NlpService service;
 
-    @Value("#{environment['AVRO_PORT']?:${nlp.avro.port}}")
+    @Value("#{environment['AVRO_PORT']?:${avro.port}}")
     Integer port;
 
-    @Value("#{environment['AVRO_HOST']?:'${nlp.avro.host}'}")
-    String host;
+    String host = "0.0.0.0";
 
     private AvroServer server;
 

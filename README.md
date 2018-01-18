@@ -43,13 +43,7 @@ my-service
                                       |-- controllers
                                             |-- AvroController.java
                                             |-- RestAnnotateController.java
-                                            [-- RestProcessController.java
-                                      |-- model
-                                            |-- Annotation.java
-                                            |-- AnnotationRequest.java
-                                            |-- AnnotationResult.java
-                                            |-- ProcessRequest.java
-                                            [-- ProcessResult.java
+                                            [-- RestProcessController.java                                      
                                       |-- MyService.java
                                       [-- Application.java
          |-- resources

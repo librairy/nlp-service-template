@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import org.librairy.service.nlp.Application;
 import org.librairy.service.nlp.facade.model.Form;
 import org.librairy.service.nlp.facade.model.PoS;
-import org.librairy.service.nlp.model.ProcessRequest;
+import org.librairy.service.nlp.facade.rest.model.ProcessRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
