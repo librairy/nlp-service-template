@@ -70,13 +70,13 @@ my-service
                  [-- run.sh
 ```
 
-The `src/main/java` directory contains the project source code, the `src/test/java` directory contains the test source, and the pom.xml` file is the project's Project Object Model, or POM.
+The `src/main/java` directory contains the project source code, the `src/test/java` directory contains the test source, and the `pom.xml` file is the project's Project Object Model, or POM.
 
 You only have to take `src/main/java/org/librairy/service/nlp/MyService` into account, which contains the service operations.  
  
 ## Test
 
-JUnit from Spring has been used to facilitate the executions of tests. So, it will be enough to enrich the existing test classes with new tests.
+JUnit from Spring has been used to facilitate the executions of tests. So, it will be enough to enrich the existing test classes with new tests and run it in your favourite IDE.
  
 ## Distribution
 
@@ -84,4 +84,9 @@ A `docker-maven-plugin` has also been configured to create a docker image automa
 
 ```sh
 mvn clean package docker:build 
+```
+
+If you have a [DockerHub]() account, the docker image can be automatically uploaded by running the following instruction:
+```sh
+mvn docker:push
 ```
